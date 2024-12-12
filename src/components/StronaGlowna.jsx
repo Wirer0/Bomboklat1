@@ -1,3 +1,4 @@
+
 function StronaGlowna(){
     function godzinka(){
         const date = new Date();
@@ -13,13 +14,15 @@ function StronaGlowna(){
         </div>
         <div class='contener'>
             <div class='naw'>
-        
+                <div class='nawelem'>
+                    <Link to='/todo'
+                </div>
             </div>
             <div class='godzina'>
                 {godzinka()}
             </div>
-            <div class='pogoda'>
-                Pogoda
+            <div class='gielda'>
+                giełda-api
             </div>
         </div>
         

@@ -1,12 +1,17 @@
+import { Route } from 'react-router-dom';
+import { BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
 import StronaGlowna from './components/StronaGlowna';
-import Todolist from './components/Todolist/Todolist';
+import Todolist from './components/Todolist';
 function App() {
   return (
-    <div className="App">
-        <StronaGlowna/>
-        <Todolist/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<StronaGlowna />}>
+          <Route path='/todolist' element={<Todolist/>}/>
+        </Route>
+      </Routes>        
+    </BrowserRouter>
   );
 }
 

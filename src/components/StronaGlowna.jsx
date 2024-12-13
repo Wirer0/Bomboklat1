@@ -15,7 +15,7 @@ function StronaGlowna(){
         <div class='contener'>
             <div class='naw'>
                 <div class='nawelem'>
-                    <Link to='/todo'
+                    <Link to='/todolist'></Link>
                 </div>
             </div>
             <div class='godzina'>
